@@ -15,15 +15,35 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.square {
+  background: #000000;
+  border: 2px solid #0413ee;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 66px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 66px;
+  color: aquamarine;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  display: flex;
+}
+.GameStatus {
+  margin-bottom: 25px;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(180deg, rgb(8, 8, 8), rgb(0, 4, 255));
 }
 
 @layer utilities {
